@@ -20,7 +20,18 @@
 
 **Multi Threading**
 
-Thread stack
+Thread stack - memory allocated to Thread 
+
+Thread shares heap
+
+Thread suspensions - do research 
+
+synchronized keyword
+synchronized block 
+
+Never use Local string variables for synchronized block 
+
+Thread interference 
 
 
 We can't guarantee the order in which the threads run, it all depends on the computer how it schedule tasks.

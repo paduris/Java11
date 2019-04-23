@@ -23,10 +23,14 @@ public class Main {
         Thread myRunnableThread = new Thread(new MyRunnable() {
             @Override
             public void run() {
+
                 System.out.println(ANSI_RED + "Hello from the anonymous class's implementation of run()");
 
                 try{
                     anotherThread.join();
+
+                    System.out.println("My Runnable Thread is resuming operations ");
+
                 }catch (InterruptedException e)
                 {
                     System.out.println(ANSI_RED+"I couldn't wait after all , I was interrupted");
