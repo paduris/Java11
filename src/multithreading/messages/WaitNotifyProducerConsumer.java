@@ -5,7 +5,7 @@ package multithreading.messages;
 
 import java.util.Random;
 
-public class Main {
+public class WaitNotifyProducerConsumer {
     public static void main(String[] args) {
 
         Message message = new Message();
@@ -73,11 +73,9 @@ class Writer implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
         }
         message.write("Write Finished");
     }
-
 }
 
 class Reader implements Runnable {
@@ -99,11 +97,6 @@ class Reader implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
-
         }
-
     }
-
-
 }
